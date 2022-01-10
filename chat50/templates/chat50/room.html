@@ -79,7 +79,7 @@
           type: 'GET',
           url: "/getMessages/{{room}}/",
           success: function (response) {
-            console.log(response);
+            //console.log(response);
             $("#display").empty();
             for (var key in response.messages) {
               var temp = "<div class='container darker'><b>" + response.messages[key].user + "</b><p>" + response.messages[key].value + "</p><span class='time-left'>" + response.messages[key].date + "</span></div>";

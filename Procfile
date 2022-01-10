@@ -1,0 +1,1 @@
+web: gunicorn chat50.wsgi --log-file -

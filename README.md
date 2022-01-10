@@ -2,7 +2,7 @@
 It is a real time web based chat app. You can create rooms with your friends and chat.
 
 <br>
-<a href="#">See it in action.</a>
+<a href="https://aviraj-chat50.herokuapp.com">See it in action.</a>
 
 ## Installation
 - You need to have **Django** installed on your local machine.

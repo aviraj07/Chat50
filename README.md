@@ -33,14 +33,6 @@ After you've entered the room, you have the option to send messages. When you ty
 
 There are other supporting files as well.
 
-## Distinctiveness and Complexity:
-- This projects is distinct from Pizza, Network, and Commerce Project because this isn't any place where people can list out their items and sell and nor the place to post out stuffs and connect with each other. This is a real time chat app where people can create rooms and have a real time chat without requiring to reload the webpages.
-- Chat50 utilises Django and its models on the backend. It ahs three models. One for the user to login and logout. Second for creating the rooms to chat. And third for the messages. It also utilised Javascript mainly ajax to query out the messages in real time so that user does not have to reload the pages to see the newer messages.
-- It is mobile-responsive because it uses bootstrap for layout and some additional css properties to make it look better in all the devices.
 
-## Preview
 ![Preview](./ezgif.com-gif-maker.gif)
 
-## Finally
-
-Thanks for all people who made CS50's Web Programming with Python and JavaScript possible. 

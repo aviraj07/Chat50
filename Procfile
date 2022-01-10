@@ -1,1 +1,1 @@
-web: gunicorn chat50.wsgi --log-file -
+web: gunicorn FinalProject.wsgi --log-file -

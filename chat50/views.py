@@ -64,6 +64,7 @@ def register(request):
         return render(request, "chat50/register.html")    
 
 def room(request, room):
+    room = room.strip()
     username = request.GET.get('username')
     room_details = Room.objects.get(name=room)
     return render(request, 'chat50/room.html', {

@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth import authenticate, login, logout
 from django.db import IntegrityError
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
@@ -64,14 +65,18 @@ def register(request):
         return render(request, "chat50/register.html")    
 
 def room(request, room):
-    room = room.strip()
+    room = str(room)
     username = request.GET.get('username')
-    room_details = Room.objects.get(name=room)
+    try:
+        room_details = Room.objects.get(name=room)
+    except Room.DoesNotExist:
+        room_details = "none"    
     return render(request, 'chat50/room.html', {
         'username': username,
         'room': room,
         'room_details': room_details
     })
+
 
 def checkview(request):
     room = request.POST['room_name'].strip()
